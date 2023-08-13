@@ -10,7 +10,7 @@ public class Task5BFS {
         // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ WRITE CODE HERE (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
     }
 
-    public ArrayList<Integer> getDFSOrder(ArrayList<ArrayList<Integer>> adj) {
+    public static int[] getBFSOrder(int[][] adj) {
         /*
          * Функция возвращает массив с порядковыми номерами вершин в обходе
          * Дано дерево из n (<= 10^5) вершин (пронумерованных от 0 до n-1)

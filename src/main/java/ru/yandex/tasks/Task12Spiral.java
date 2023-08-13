@@ -3,7 +3,7 @@ package ru.yandex.tasks;
 import java.util.ArrayList;
 
 public class Task12Spiral {
-    public ArrayList<ArrayList<Integer>> draw (int N) {
+    public static int[][] draw (int N) {
         /*
          * Отрисовывает "спираль" в двумерном массиве по часовой стрелке
          * -10^3 <= N <= 10^3
