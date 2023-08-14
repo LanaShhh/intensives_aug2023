@@ -10,7 +10,18 @@ public class Task1BubbleSort {
          * Выход: отсортированный (сортировкой пузырьком!) numbers
          */
         // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ WRITE CODE HERE (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
-        return null;
+        Integer swap;
+        for (int i = 0; i < numbers.size(); i++) {
+            for (int j = 0; j < numbers.size() - 1; j++) {
+                if (numbers.get(j) > numbers.get(j + 1)) {
+                    // swap
+                    swap = numbers.get(j);
+                    numbers.set(j, numbers.get(j+1));
+                    numbers.set(j + 1, swap);
+                }
+            }
+        }
+        return numbers;
     }
 
     public static void selfCheck() {
