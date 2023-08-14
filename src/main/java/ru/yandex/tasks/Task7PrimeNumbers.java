@@ -9,7 +9,28 @@ public class Task7PrimeNumbers {
          * Выход: отсортированный массив всех простых чисел от 2 до N
          */
         // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ WRITE CODE HERE (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
-        return null;
+        int[] isPrime = new int[N + 1];
+        for (int i = 0; i <= N; ++i) {
+            isPrime[i] = 1;
+        }
+        int primeCount = 0;
+        for (int i = 2; i <= N; ++i) {
+            if (isPrime[i] == 0) {
+                continue;
+            }
+            primeCount++;
+            for (int j = i * i; j <= N; j += i) {
+                isPrime[j] = 0;
+            }
+        }
+        int[] primeNumbers = new int[primeCount];
+        int pointer = 0;
+        for (int i = 2; i <= N; ++i) {
+            if (isPrime[i] == 1) {
+                primeNumbers[pointer++] = i;
+            }
+        }
+        return primeNumbers;
     }
 
     public static void selfCheck() {
