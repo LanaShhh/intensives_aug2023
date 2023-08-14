@@ -2,6 +2,8 @@ package ru.yandex.tasks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 
 public class Task3InsertionSort {
     public static ArrayList<Integer> sort(ArrayList<Integer> numbers) {
@@ -10,7 +12,15 @@ public class Task3InsertionSort {
          * Выход: отсортированный (сортировкой вставками!) numbers
          */
         // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ WRITE CODE HERE (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
-        return null;
+        int n = numbers.size();
+        for (int i = 0; i < n; ++i) {
+            int j = i;
+            while (j > 0 && numbers.get(j) < numbers.get(j-1)) {
+                Collections.swap(numbers, j - 1, j);
+                j--;
+            }
+        }
+        return numbers;
     }
 
     public static void selfCheck() {
