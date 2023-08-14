@@ -8,6 +8,7 @@ import ru.yandex.tasks.Task5BFS;
 import ru.yandex.tasks.Task6BraceBalance;
 import ru.yandex.tasks.Task7PrimeNumbers;
 import ru.yandex.tasks.Task8BinarySearch;
+import ru.yandex.tasks.Task9ReverseList;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,5 +20,6 @@ public class Main {
         Task6BraceBalance.selfCheck();
         Task7PrimeNumbers.selfCheck();
         Task8BinarySearch.selfCheck();
+        Task9ReverseList.selfCheck();
     }
 }
