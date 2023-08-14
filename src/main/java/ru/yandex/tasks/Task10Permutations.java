@@ -3,11 +3,11 @@ package ru.yandex.tasks;
 import java.util.ArrayList;
 
 public class Task10Permutations {
-    public static void nextPermutation(int[] numbers) {
+    public static int[][] permutations(int[] numbers) {
         /*
-         * in place переставляет элементы массива на следующую лексикографически
-         * на перестановку (3, 2, 1) вернуть (1, 2, 3)
+         * Возвращает массив со всеми перестановками массива numbers (до 10^5 элементов, все по модулю до 10^5)
          */
         // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ WRITE CODE HERE (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
+        return null;
     }
 }

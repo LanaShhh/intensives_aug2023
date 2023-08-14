@@ -6,7 +6,7 @@ public class Task11BiggestSubarraySum {
 
     public static Subarray find(int[] numbers) {
         /*
-         * Находит подмассив с наибольшей суммой элементов
+         * Находит подмассив (подряд идущие элементы массива) с наибольшей суммой элементов
          * numbers: массив целых чисел, -10^5 <= numbers[i] <= 10^5, длина массива до 10^5
          * Выход: Subarray
          */
