@@ -5,6 +5,7 @@ import ru.yandex.tasks.Task2SelectionSort;
 import ru.yandex.tasks.Task3InsertionSort;
 import ru.yandex.tasks.Task4DFS;
 import ru.yandex.tasks.Task5BFS;
+import ru.yandex.tasks.Task6BraceBalance;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,5 +14,6 @@ public class Main {
         Task3InsertionSort.selfCheck();
         Task4DFS.selfCheck();
         Task5BFS.selfCheck();
+        Task6BraceBalance.selfCheck();
     }
 }
