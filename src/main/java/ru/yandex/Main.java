@@ -1,5 +1,6 @@
 package ru.yandex;
 
+import ru.yandex.tasks.Task10Permutations;
 import ru.yandex.tasks.Task1BubbleSort;
 import ru.yandex.tasks.Task2SelectionSort;
 import ru.yandex.tasks.Task3InsertionSort;
@@ -21,5 +22,6 @@ public class Main {
         Task7PrimeNumbers.selfCheck();
         Task8BinarySearch.selfCheck();
         Task9ReverseList.selfCheck();
+        Task10Permutations.selfCheck();
     }
 }

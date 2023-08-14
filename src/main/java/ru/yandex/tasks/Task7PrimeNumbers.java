@@ -19,6 +19,9 @@ public class Task7PrimeNumbers {
                 continue;
             }
             primeCount++;
+            if ((long)i * i > N)
+                continue;
+
             for (int j = i * i; j <= N; j += i) {
                 isPrime[j] = 0;
             }
