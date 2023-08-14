@@ -9,5 +9,6 @@ public class Main {
         Task1BubbleSort.selfCheck();
         Task2SelectionSort.selfCheck();
         Task4DFS.selfCheck();
+        Task4DFS.selfCheck();
     }
 }
