@@ -1,16 +1,30 @@
 package ru.yandex.tasks;
 
+import javax.swing.text.StyleContext;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Task1BubbleSort {
+
+    public static void main(String[] args) {
+        selfCheck();
+    }
+
     public static ArrayList<Integer> sort(ArrayList<Integer> numbers) {
         /*
          * numbers: массив целых чисел, -10^5 <= numbers[i] <= 10^5, длина массива до 10^5
          * Выход: отсортированный (сортировкой пузырьком!) numbers
          */
-        // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ WRITE CODE HERE (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
-        return null;
+        for (int maxSize = numbers.size(); maxSize > 0; maxSize--) {
+            for (int i = 0; i < maxSize; i++) {
+                if (i + 1 < numbers.size() && numbers.get(i + 1) < numbers.get(i)) {
+                    int buffer = numbers.get(i + 1);
+                    numbers.set(i + 1, numbers.get(i));
+                    numbers.set(i, buffer);
+                }
+            }
+        }
+        return numbers;
     }
 
     public static void selfCheck() {
