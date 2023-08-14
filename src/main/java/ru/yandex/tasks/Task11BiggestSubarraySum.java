@@ -1,7 +1,5 @@
 package ru.yandex.tasks;
 
-import java.util.ArrayList;
-
 public class Task11BiggestSubarraySum {
 
     public static Subarray find(int[] numbers) {
@@ -12,5 +10,13 @@ public class Task11BiggestSubarraySum {
          */
         // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ WRITE CODE HERE (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
         return null;
+    }
+
+    public static void selfCheck() {
+        int[] output = {1, 2, -5, 7, -1, 6};
+        Subarray ans = find(output);
+
+        assert ans != null;
+        assert (ans.left == 3 && ans.right == 6);
     }
 }

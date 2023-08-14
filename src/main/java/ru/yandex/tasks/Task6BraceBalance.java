@@ -9,4 +9,12 @@ public class Task6BraceBalance {
         // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ WRITE CODE HERE (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
         return true;
     }
+
+    public static void selfCheck() {
+        String test1 = "[({})]{[]}";
+        String test2 = "{({})}{";
+
+        assert checkBalance(test1);
+        assert !checkBalance(test2);
+    }
 }

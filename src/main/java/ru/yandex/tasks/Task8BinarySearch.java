@@ -1,7 +1,5 @@
 package ru.yandex.tasks;
 
-import java.util.ArrayList;
-
 public class Task8BinarySearch {
     public static int find(int number, int[] sortedList) {
         /*
@@ -12,5 +10,13 @@ public class Task8BinarySearch {
          */
         // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ WRITE CODE HERE (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
         return -1;
+    }
+
+    public static void selfCheck() {
+        int[] input = {1, 3, 5, 7, 9};
+
+        for (int i = 0; i < input.length; i++) {
+            assert (find(input[i], input) == i);
+        }
     }
 }
