@@ -3,6 +3,7 @@ package ru.yandex;
 import ru.yandex.tasks.Task10Permutations;
 import ru.yandex.tasks.Task11BiggestSubarraySum;
 import ru.yandex.tasks.Task12Spiral;
+import ru.yandex.tasks.Task13MergeSort;
 import ru.yandex.tasks.Task1BubbleSort;
 import ru.yandex.tasks.Task2SelectionSort;
 import ru.yandex.tasks.Task3InsertionSort;
@@ -27,5 +28,6 @@ public class Main {
         Task10Permutations.selfCheck();
         Task11BiggestSubarraySum.selfCheck();
         Task12Spiral.selfCheck();
+        Task13MergeSort.selfCheck();
     }
 }
