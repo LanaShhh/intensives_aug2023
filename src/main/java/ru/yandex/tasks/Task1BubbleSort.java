@@ -16,12 +16,17 @@ public class Task1BubbleSort {
          * Выход: отсортированный (сортировкой пузырьком!) numbers
          */
         for (int maxSize = numbers.size(); maxSize > 0; maxSize--) {
+            boolean isSwap = false;
             for (int i = 0; i < maxSize; i++) {
                 if (i + 1 < maxSize && numbers.get(i + 1) < numbers.get(i)) {
                     int buffer = numbers.get(i + 1);
                     numbers.set(i + 1, numbers.get(i));
                     numbers.set(i, buffer);
+                    isSwap = true;
                 }
+            }
+            if (!isSwap) {
+                break;
             }
         }
         return numbers;
