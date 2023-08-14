@@ -10,15 +10,15 @@ public class Task10Permutations {
 
     public static int generate(int[] numbers, int[] used, int[][] answer, int posInAnswer) {
         if (pos == numbers.length) {
-            answer[posInAnswer] = Arrays.copyOf(cur, pos);
-            return posInAnswer;
+            answer[posInAnswer] = Arrays.copyOf(cur, cur.length);
+            return posInAnswer + 1;
         }
         for (int i = 0; i < numbers.length; ++i) {
             if (used[i] == 0) {
                 used[i] = 1;
                 cur[pos] = numbers[i];
                 pos++;
-                posInAnswer = generate(numbers, used, answer, posInAnswer) + 1;
+                posInAnswer = generate(numbers, used, answer, posInAnswer);
                 pos--;
                 used[i] = 0;
             }
