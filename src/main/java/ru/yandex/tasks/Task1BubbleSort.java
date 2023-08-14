@@ -17,7 +17,7 @@ public class Task1BubbleSort {
          */
         for (int maxSize = numbers.size(); maxSize > 0; maxSize--) {
             for (int i = 0; i < maxSize; i++) {
-                if (i + 1 < numbers.size() && numbers.get(i + 1) < numbers.get(i)) {
+                if (i + 1 < maxSize && numbers.get(i + 1) < numbers.get(i)) {
                     int buffer = numbers.get(i + 1);
                     numbers.set(i + 1, numbers.get(i));
                     numbers.set(i, buffer);
