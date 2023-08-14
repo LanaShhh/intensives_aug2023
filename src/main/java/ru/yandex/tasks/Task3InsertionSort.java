@@ -10,7 +10,17 @@ public class Task3InsertionSort {
          * Выход: отсортированный (сортировкой вставками!) numbers
          */
         // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ WRITE CODE HERE (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
-        return null;
+        for (int i = 0; i < numbers.size() - 1; i++) {
+            int j = i + 1;
+            while (j > 0 && numbers.get(j - 1) > numbers.get(j)) {
+                int tmp = numbers.get(j - 1);
+                numbers.set(j - 1, numbers.get(j));
+                numbers.set(j, tmp);
+                j--;
+            }
+        }
+
+        return numbers;
     }
 
     public static void selfCheck() {
