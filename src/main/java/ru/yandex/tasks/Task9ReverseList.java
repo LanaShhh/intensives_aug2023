@@ -11,14 +11,19 @@ public class Task9ReverseList {
         if (head == null) {
             return null;
         }
-        if (head.next == null) {
+        Node next = head.next;
+        if (next == null) {
             return head;
         }
-        Node next = head.next;
-        Node newHead = reverse(next);
         head.next = null;
+        while (next.next != null) {
+            Node nextNext = next.next;
+            next.next = head;
+            head = next;
+            next = nextNext;
+        }
         next.next = head;
-        return newHead;
+        return next;
     }
 
     public static void selfCheck() {

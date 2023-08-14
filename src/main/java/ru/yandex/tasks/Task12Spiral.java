@@ -10,7 +10,34 @@ public class Task12Spiral {
          * Выход: массив со спиралью
          */
         // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ WRITE CODE HERE (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
-        return null;
+        int[][] spiral = new int[N][N];
+        for (int i = 0; i < N; ++i) {
+            for (int j = 0; j < N; ++j) {
+                spiral[i][j] = 0;
+            }
+        }
+        int i = 0, j = 0;
+        int value = 1;
+        spiral[i][j] = value++;
+        while (value <= N * N) {
+            while (j + 1 < N && spiral[i][j+1] == 0) {
+                spiral[i][j+1] = value++;
+                j++;
+            }
+            while (i + 1 < N && spiral[i+1][j] == 0) {
+                spiral[i+1][j] = value++;
+                i++;
+            }
+            while (j - 1 >= 0 && spiral[i][j-1] == 0) {
+                spiral[i][j-1] = value++;
+                j--;
+            }
+            while (i - 1 >= 0 && spiral[i-1][j] == 0) {
+                spiral[i-1][j] = value++;
+                i--;
+            }
+        }
+        return spiral;
     }
 
     public static void selfCheck() {
