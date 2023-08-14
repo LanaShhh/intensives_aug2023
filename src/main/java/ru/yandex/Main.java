@@ -1,6 +1,7 @@
 package ru.yandex;
 
 import ru.yandex.tasks.Task10Permutations;
+import ru.yandex.tasks.Task11BiggestSubarraySum;
 import ru.yandex.tasks.Task1BubbleSort;
 import ru.yandex.tasks.Task2SelectionSort;
 import ru.yandex.tasks.Task3InsertionSort;
@@ -23,5 +24,6 @@ public class Main {
         Task8BinarySearch.selfCheck();
         Task9ReverseList.selfCheck();
         Task10Permutations.selfCheck();
+        Task11BiggestSubarraySum.selfCheck();
     }
 }
