@@ -10,7 +10,25 @@ public class Task2SelectionSort {
          * Выход: отсортированный (сортировкой выбором!) numbers
          */
         // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ WRITE CODE HERE (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
-        return null;
+        for (int i = 0; i < numbers.size(); i++) {
+            int minIndex = 0;
+            int minValue = Integer.MAX_VALUE;
+            for (int j = i; j < numbers.size(); j++) {
+                if (numbers.get(j) < minValue) {
+                    minValue = numbers.get(j);
+                    minIndex = j;
+                }
+            }
+            swap(numbers, i, minIndex);
+        }
+        System.out.println(numbers);
+        return numbers;
+    }
+
+    private static void swap(ArrayList<Integer> nums, int indexFrom, int indexTo) {
+        Integer tmp = nums.get(indexFrom);
+        nums.set(indexFrom, nums.get(indexTo));
+        nums.set(indexTo, tmp);
     }
 
     public static void selfCheck() {

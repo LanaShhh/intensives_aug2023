@@ -13,11 +13,14 @@ public class Task1BubbleSort {
         if (numbers.size() < 1) return numbers;
 
         for (int i = 0; i < numbers.size(); i ++) {
+            boolean isSwapped = false;
             for (int j = 0; j < numbers.size() - 1; j++) {
                 if (numbers.get(j) > numbers.get(j + 1)) {
+                    isSwapped = true;
                     swap(numbers, j, j + 1);
                 }
             }
+            if (!isSwapped) return numbers;
         }
 
         System.out.println(numbers);
