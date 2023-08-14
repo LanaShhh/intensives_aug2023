@@ -14,10 +14,15 @@ public class Task1BubbleSort {
         // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ WRITE CODE HERE (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
         int n = numbers.size();
         for (int i = 0; i < n; ++i) {
+            int swaps = 0;
             for (int j = 0; j < n - i - 1; ++j) {
                 if (numbers.get(j) > numbers.get(j + 1)) {
                     Collections.swap(numbers, j, j + 1);
+                    swaps++;
                 }
+            }
+            if (swaps == 0) {
+                break;
             }
         }
         return numbers;
