@@ -1,3 +1,5 @@
+// Extra task https://leetcode.com/problems/prime-in-diagonal/
+
 package ru.yandex.tasks;
 
 import java.util.Arrays;
