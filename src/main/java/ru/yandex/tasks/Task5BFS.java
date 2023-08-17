@@ -3,7 +3,7 @@ package ru.yandex.tasks;
 import java.util.Arrays;
 
 public class Task5BFS {
-    public void runSearch() {
+    public static void runSearch() {
         /*
          * Реализация bfs
          */
