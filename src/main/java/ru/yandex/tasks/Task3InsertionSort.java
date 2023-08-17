@@ -1,3 +1,5 @@
+// Extra task https://leetcode.com/problems/find-the-value-of-the-partition/
+
 package ru.yandex.tasks;
 
 import java.util.ArrayList;
