@@ -29,7 +29,7 @@
 
 <img width="269" alt="image" src="https://github.com/LanaShhh/intensives_aug2023/assets/84940283/ddb25ff8-d079-4ca8-b377-5a57c360d345">
 
-(Обычно) справа (иногда внизу) появляется строка с надписью VM options, туда пишем -ea или -enableassertions
+(Обычно) справа (иногда внизу) появляется строка с надписью VM options, туда пишем *-ea* или *-enableassertions*
 
 Внизу жмем Apply и OK
 
