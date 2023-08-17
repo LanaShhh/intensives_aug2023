@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Task10Permutations {
     public static int[][] permutations(int[] numbers) {
         /*
-         * Возвращает массив со всеми перестановками массива numbers (до 10 элементов, все по модулю до 10^5)
+         * Возвращает массив со всеми перестановками массива numbers (массив n чисел от 1 до n, 1 <= n <= 10)
          */
         // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ WRITE CODE HERE (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
         return null;
