@@ -3,7 +3,7 @@ package ru.yandex.tasks;
 import java.util.Arrays;
 
 public class Task4DFS {
-    public void runSearch() {
+    public static void runSearch() {
         /*
          * Реализация dfs
          */
