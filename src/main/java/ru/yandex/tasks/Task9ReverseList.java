@@ -1,3 +1,5 @@
+// Extra task https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+
 package ru.yandex.tasks;
 
 public class Task9ReverseList {
