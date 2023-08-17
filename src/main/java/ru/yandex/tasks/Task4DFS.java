@@ -1,3 +1,5 @@
+// Extra task https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/
+
 package ru.yandex.tasks;
 
 import java.util.Arrays;
