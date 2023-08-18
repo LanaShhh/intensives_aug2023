@@ -12,8 +12,25 @@ public class Task1BubbleSort {
          * Выход: отсортированный (сортировкой пузырьком!) numbers
          */
         // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ WRITE CODE HERE (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
-        return null;
+        boolean isSwapped;
+        for (int i = 0; i < numbers.size() - 1; i++) {
+            isSwapped = false;
+            for (int j = 0; j < numbers.size() - i - 1; j++) {
+                int a = numbers.get(j);
+                int b = numbers.get(j + 1);
+                if (a > b) {
+                    numbers.set(j, b);
+                    numbers.set(j + 1, a);
+                    isSwapped = true;
+                }
+            }
+            if (!isSwapped) {
+                break;
+            }
+        }
+        return numbers;
     }
+
 
     public static void selfCheck() {
         ArrayList<Integer> input = new ArrayList<>(Arrays.asList(3, 4, 5, 2, 1));
