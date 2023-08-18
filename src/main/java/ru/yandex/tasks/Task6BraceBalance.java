@@ -2,6 +2,9 @@
 
 package ru.yandex.tasks;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 public class Task6BraceBalance {
     public static boolean checkBalance(String sequence) {
         /*
@@ -9,7 +12,25 @@ public class Task6BraceBalance {
          * Выход: true/false, является ли строка ПСП
          */
         // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ WRITE CODE HERE (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
-        return true;
+        Deque<Character> queue = new ArrayDeque<>();
+        for (int i = 0; i < sequence.length(); i++) {
+            char c = sequence.charAt(i);
+            if (c == '[' || c == '{' || c == '(') {
+                queue.addLast(c);
+            } else  {
+                if (queue.isEmpty()) {
+                    return false;
+                }
+                switch (c) {
+                    case ']' -> {if (queue.peekLast() != '[') return false;}
+                    case '}' -> {if (queue.peekLast() != '{') return false;}
+                    case ')' -> {if (queue.peekLast() != '(') return false;}
+                }
+                queue.pollLast();
+            }
+
+        }
+        return queue.isEmpty();
     }
 
     public static void selfCheck() {
