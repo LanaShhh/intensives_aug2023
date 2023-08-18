@@ -4,6 +4,8 @@ package ru.yandex.tasks;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class Task3InsertionSort {
     public static ArrayList<Integer> sort(ArrayList<Integer> numbers) {
@@ -12,7 +14,22 @@ public class Task3InsertionSort {
          * Выход: отсортированный (сортировкой вставками!) numbers
          */
         // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ WRITE CODE HERE (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
-        return null;
+        ArrayList<Integer> sortedNumbers = new ArrayList<>(Collections.nCopies(numbers.size(), Integer.MAX_VALUE));
+        for (int i = 0; i < numbers.size(); i++) {
+            int el = numbers.get(i);
+            int insertInd = i;
+            for (int j = 0; j <= i; j++) {
+                if (el < sortedNumbers.get(j)) {
+                    insertInd = j;
+                    break;
+                }
+            }
+            for (int j = i; j > insertInd; j--) {
+                sortedNumbers.set(j, sortedNumbers.get(j - 1));
+            }
+            sortedNumbers.set(insertInd, el);
+        }
+        return sortedNumbers;
     }
 
     public static void selfCheck() {
@@ -20,5 +37,16 @@ public class Task3InsertionSort {
         ArrayList<Integer> output = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
 
         assert output.equals(sort(input));
+
+        ArrayList<Integer> input2 = new ArrayList<>(Arrays.asList(2, 1));
+        ArrayList<Integer> output2 = new ArrayList<>(Arrays.asList(1, 2));
+
+        assert output2.equals(sort(input2));
+
+
+        ArrayList<Integer> input3 = new ArrayList<>(Arrays.asList(5, 4, 3, 2, 1, 0));
+        ArrayList<Integer> output3 = new ArrayList<>(Arrays.asList(0, 1, 2, 3, 4, 5));
+
+        assert output3.equals(sort(input3));
     }
 }
