@@ -1,4 +1,4 @@
-// Extra task https://leetcode.com/problems/reconstruct-a-2-row-binary-matrix/
+// Extra task https://leetcode.com/problems/validate-binary-tree-nodes/
 
 package ru.yandex.tasks;
 
