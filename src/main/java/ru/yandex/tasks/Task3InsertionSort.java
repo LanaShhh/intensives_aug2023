@@ -14,22 +14,22 @@ public class Task3InsertionSort {
          * Выход: отсортированный (сортировкой вставками!) numbers
          */
         // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧ WRITE CODE HERE (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
-        ArrayList<Integer> sortedNumbers = new ArrayList<>(Collections.nCopies(numbers.size(), Integer.MAX_VALUE));
+//        ArrayList<Integer> sortedNumbers = new ArrayList<>(Collections.nCopies(numbers.size(), Integer.MAX_VALUE));
         for (int i = 0; i < numbers.size(); i++) {
             int el = numbers.get(i);
             int insertInd = i;
             for (int j = 0; j <= i; j++) {
-                if (el < sortedNumbers.get(j)) {
+                if (el < numbers.get(j)) {
                     insertInd = j;
                     break;
                 }
             }
             for (int j = i; j > insertInd; j--) {
-                sortedNumbers.set(j, sortedNumbers.get(j - 1));
+                numbers.set(j, numbers.get(j - 1));
             }
-            sortedNumbers.set(insertInd, el);
+            numbers.set(insertInd, el);
         }
-        return sortedNumbers;
+        return numbers;
     }
 
     public static void selfCheck() {
