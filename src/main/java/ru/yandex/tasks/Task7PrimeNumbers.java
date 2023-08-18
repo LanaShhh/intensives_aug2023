@@ -17,7 +17,7 @@ public class Task7PrimeNumbers {
         for (int i = 2; i  < N + 2; i++) {
             if (isSimple[i]) {
                 resLen++;
-                for (int j = 2; i * j < N + 2; j++) {
+                for (int j = i; i * j < N + 2; j++) {
                     isSimple[j * i] = false;
                 }
             }
