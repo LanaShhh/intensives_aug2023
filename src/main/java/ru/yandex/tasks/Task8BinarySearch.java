@@ -34,5 +34,7 @@ public class Task8BinarySearch {
         assert (find(3, new int[]{1, 2, 3, 3, 3}) == 4);
         assert (find(3, new int[]{1, 2, 3, 3, 3, 5}) == 4);
         assert (find(3, new int[]{3, 3, 5}) == 1);
+        assert (find(3, new int[]{3, 3}) == 1);
+        assert (find(3, new int[]{3}) == 0);
     }
 }
