@@ -1,0 +1,81 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "author": "Михаил",
+      "date": "25 ноября 2023",
+      "title": "Вот так улов!",
+      "img": "https://www.generatormix.com/images/fish/white-marlin.jpg"
+    },
+    {
+      "id": 2,
+      "author": "Александр",
+      "date": "20 июня 2023",
+      "title": "Рыбаки ловили рыбу",
+      "img": "https://www.generatormix.com/images/fish/butterfish.jpg"
+    },
+    {
+      "id": 3,
+      "author": "Саня",
+      "date": "30 февраля 2022",
+      "title": "Вот так рыба",
+      "img": "https://www.generatormix.com/images/fish/tautog.jpg"
+    },
+    {
+      "id": 4,
+      "author": "Игорь",
+      "date": "20 июня 2023",
+      "title": "Секрет успешной рыбалки",
+      "img": "https://www.generatormix.com/images/fish/paddlefish.jpg"
+    },
+    {
+      "id": 5,
+      "author": "Бодя",
+      "date": "20 июня 2023",
+      "title": "Акула в озере",
+      "img": "https://www.generatormix.com/images/fish/queenfish.jpg"
+    },
+    {
+      "id": 6,
+      "author": "Дядя Виталик",
+      "date": "20 июня 2023",
+      "title": "Необычная рыба",
+      "img": "https://www.generatormix.com/images/fish/hogfish.jpg"
+    },
+    {
+      "id": 7,
+      "author": "Володя",
+      "date": "20 июня 2023",
+      "title": "Лохнесское чудовище",
+      "img": "https://www.generatormix.com/images/fish/smelt.jpg"
+    },
+    {
+      "id": 8,
+      "author": "Денис",
+      "date": "20 июня 2023",
+      "title": "Рыба мечты",
+      "img": "https://www.generatormix.com/images/fish/dolphin-(mahi-mahi).jpg"
+    },
+    {
+      "id": 9,
+      "author": "Никита",
+      "date": "20 июня 2023",
+      "title": "Нужна помощь!",
+      "img": "https://www.generatormix.com/images/fish/tilefish.jpg"
+    },
+    {
+      "id": 10,
+      "author": "Димитрий",
+      "date": "20 июня 2023",
+      "title": "Чудо-приманка",
+      "img": "https://www.generatormix.com/images/fish/dhufish.jpg"
+    },
+    {
+      "id": 11,
+      "author": "Влад",
+      "date": "20 июня 2023",
+      "title": "Акула",
+      "img": "https://www.generatormix.com/images/fish/whale-shark.jpg"
+    }
+  ]
+}
